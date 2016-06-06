@@ -20,6 +20,7 @@ group :development, :test do
   gem 'vcr'
   gem 'pry'
   gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
