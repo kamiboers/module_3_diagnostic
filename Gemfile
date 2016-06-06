@@ -19,6 +19,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'vcr'
   gem 'pry'
+  gem 'capybara'
 end
 
 group :development do
