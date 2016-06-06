@@ -6,12 +6,13 @@ RSpec.describe "search" do
     fill_in 'zip', with: "80203"
     click_on "Locate"
 
-    expect(current_path).to eq("/search?zip=80203")
-    # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
-    # And the stations should be limited to Electric and Propane
-    expect(page).to have_content("Station Name")
-    expect(page).to have_content("Station Address")
-    expect(page).to have_content("Other Data")
+    # expect(current_path).to eq("/search?zip=80203")
+
+    expect(page).to have_content("Hyatt Regency Denver")
+    expect(page).to have_content("Fuel Type: ELEC")
+    expect(page).to have_content("Address: 650 15th St")
+    expect(page).to have_content("Access Time: 24 hours daily")
+    expect(page).to have_content("Distance: 1.03475")
   end
 end
 

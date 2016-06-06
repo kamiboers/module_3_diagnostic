@@ -1,0 +1,12 @@
+<h1>Search Results:</h1>
+<% @results.each do |result| %>
+
+<div class="container">
+	<h3>Station Name: <%= result["station_name"] %></h3>
+	Address: <%= result["street_address"] %><br>
+	Fuel Type: <%= result["fuel_type_code"] %><br>
+	Distance: <%= result["distance"] %> miles<br>
+	Access Time: <%= result["access_days_time"] %><br>
+</div>
+
+<% end %>
